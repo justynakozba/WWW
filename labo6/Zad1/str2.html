@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Justyna Koźba" />
+    <title>HTML5 - atrybuty globalne, ...</title>
+    <link rel="shortcut icon" href="http://inet01.website.net.ii.pwr.wroc.pl/navi1/ikony/favicon.ico" />
+    <link href="style/styl1.css" rel="stylesheet" type="text/css" />
+    <script src="skrypty/nasluch.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- zdefiniować styl elementów na str. 2-->
+    <style>
+        body {
+            background-color: aliceblue;
+            color: darkred
+        }
+
+        p {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <!--organizacja strony-->
+    <!--nagłówek-->
+    <header id="naglowek">
+        <p>
+            Studia podyplomowe: Technologie internetowe<br />
+            Kurs: Programowanie WWW<br />
+            Laboratorium nr 6<br />
+            HTML5 - atrybuty globalne:
+            <a href="str1.html"><b>strona 1</b></a> |
+            <a href="str2.html"><b>strona 2</b></a> |
+            <a href="str3.html"><b>strona 3</b></a> |
+            <a href="str4.html"><b>strona 4</b></a> |
+            <a href="str5.html"><b>strona 5</b></a> |
+            <a href="str6.html"><b>strona 6</b></a> |
+            <a href="str7.html"><b>strona 7</b></a> |
+            <a href="str8.html"><b>strona 8</b></a> |
+            <a href="str9.html"><b>strona 9</b></a> |
+        </p>
+        <p>
+            Autor: Justyna Koźba<br />
+            E-mail: wiz-6659@student.pwr.edu.pl
+        </p>
+    </header>
+    <!-- nawigacja -->
+    <nav id="nawigacja">
+        <div id="lewy">
+            <a href="str1.html" title="strona 1">&lt;&lt;</a>
+        </div>
+        <div id="srodek">
+            <a href="index.html" title="strona główna">strona główna</a>
+        </div>
+        <div id="prawy">
+            <a href="str3.html" title="strona 3">&gt;&gt;</a>
+        </div>
+        <div class="clear"></div>
+    </nav>
+    <!-- zasadnicza zawartość-->
+    <section>
+        <h2>Str. 2 Formularz HTML5, demo nowych typów kontrolki input</h2>
+        <p>Wpisywanie hasła</p>
+        <form>
+            Nazwa użytkownika:<br>
+            <input type="text" name="username"><br>
+            Hasło:<br>
+            <input type="password" name="psw">
+        </form>
+        <br />
+        <p>
+            Przesyłanie plików
+        </p>
+        <p>
+            Prześlij plik muzyczny w formacie mp3
+        </p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Prześlij" />
+        <br />
+
+        <p>
+            Wstawienie maila
+        </p>
+        <form>
+            E-mail:
+            <input type="email" name="email">
+        </form>
+    </section>
+
+    <!--stopka-->
+    <footer id="stopka">
+        <aside class="st-box-left">
+            Data i czas: <span id="clock"></span>
+            <br />
+            Aktualizacja: <span id="modyf"></span>
+        </aside>
+        <aside class="st-box-right">
+            <!-- walidatory -->
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS3!" />
+            </a>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="ikony/html5.png" alt="Poprawny HTML5" />
+            </a>
+        </aside>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>

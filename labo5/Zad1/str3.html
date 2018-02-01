@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Web Webowski" />
+    <title>HTML5 - elementy dokumentu i grupowania treści </title>
+    <link rel="shortcut icon" href="ikony/http://inet01.website.net.ii.pwr.wroc.pl/navi1/favicon.ico" />
+    <link href="style/styl1.css" rel="stylesheet" type="text/css" />
+    <script src="skrypty/nasluch.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- zdefiniować styl elementów na str. 3-->
+    <style>
+        .parstr3 {
+            color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <!--organizacja strony-->
+    <!--nagłówek-->
+    <header id="naglowek">
+        <p>
+            Studia podyplomowe: Technologie internetowe<br />
+            Kurs: Programowanie WWW<br />
+            Laboratorium nr 4<br />
+            HTML5 - elementy dokumentu i grupowania treści:
+            <a href="str1.html"><b>strona 1</b></a> |
+            <a href="str2.html"><b>strona 2</b></a> |
+            <a href="str3.html"><b>strona 3</b></a> |
+            <a href="str4.html"><b>strona 4</b></a> |
+        </p>
+        <p>
+            Autor: Justyna Koźba<br />
+            E-mail: wiz-6659@student.pwr.edu.pl
+        </p>
+    </header>
+    <!-- nawigacja -->
+    <nav id="nawigacja">
+        <div id="lewy">
+            <a href="str2.html" title="strona 2">&lt;&lt;</a>
+        </div>
+        <div id="srodek">
+            <a href="index.html" title="strona główna">strona główna</a>
+        </div>
+        <div id="prawy">
+            <a href="str4.html" title="strona 4">&gt;&gt;</a>
+        </div>
+        <div class="clear"></div>
+    </nav>
+    <!-- zasadnicza zawartość-->
+    <section>
+        <header><h2>Str. 3. Przykład własny z kontrolkami formaularza HTML5</h2></header>
+        <article id="zawartosc">
+            <h3>Przykłady odnośników wewnętrznych</h3>
+            <p id="par1">Ten artykuł opisuje historię HTML i ma kilka ciekawych sekcji. Pierwasza jest <a href="#sek1">tutaj</a>, druga <a href="#sek2">tutaj</a> a ostatnia jest tu<a href="#sek3">tutaj</a></p>
+            <section id="sek1">
+                <br />
+                <br />
+                W 1980 fizyk Tim Berners-Lee, pracujący dla ośrodka naukowo-badawczego CERN, stworzył prototyp hipertekstowego systemu informacyjnego – ENQUIRE. System wykorzystywano do organizowania i udostępniania dokumentów związanych z badaniami naukowymi. Rewolucyjność pomysłu polegała na tym, że użytkownik, posługując się odnośnikami, mógł z jednej lokalizacji przeglądać dokumenty fizycznie znajdujące się w innych miejscach na świecie
+                W 1989 Berners-Lee i inżynier oprogramowania CERN Robert Cailliau przedstawili równolegle dwie propozycje hipertekstowych systemów informacyjnych opartych na sieci Internet. Oba projekty cechowała podobna funkcjonalność. Rok później opracowali wspólną propozycję zaakceptowaną przez CERN – projekt WorldWideWeb (W3)
+                 <br />
+                Powrót do początku <a href="#par1">strony</a>.
+                <br /><br />
+            </section>
+            <section id="sek2">
+
+                <br /> 
+                HTML został napisany w oparciu o język SGML, jednak nie posiadał formalnej definicji w SGML-u. Sytuacja zmieniła się w połowie 1993, kiedy organizacja IETF opublikowała pierwszą propozycję specyfikacji języka HTML autorstwa Bernersa-Lee i Dana Connolly – Hypertext Markup Language (HTML) Internet-Draft (pol. szkic) – zawierającą opis gramatyki w postaci SGML Document Type Definition (pol. definicja typu dokumentu). Opierając się na tym dokumencie twórcy przeglądarek eksperymentowali z HTML-em modyfikując atrybuty istniejących już znaczników oraz dodając całkowicie nowe. Szkic wygasł sześć miesięcy później, ale był znany z obsługiwania specyficznych dla przeglądarki NCSA Mosaic znaczników, służących do wstawiania obrazków. Fakt ten odzwierciedlał filozofię IETF bazowania przyszłych standardów na prototypach, które odniosły sukces. Podobnie Dave Raggett pod koniec 1993 w swoim szkicu HTML+ (Hypertext Markup Format) sugerował standaryzację już zaimplementowanych znaczników np. związanych z tworzeniem tabel i formularzy.
+                <br />
+                Powrót do początku <a href="#par1">strony</a>.
+            </section>
+                <br /><br />
+            <section id="sek3">
+                <br />
+                Po wygaśnięciu szkiców HTML i HTML+ na początku 1994 organizacja IETF wydzieliła HTML Working Group, która w 1995 stworzyła HTML 2.0 – pierwszą oficjalną specyfikację języka HTML, traktowaną jako standard i podstawę przyszłych implementacji kolejnych wersji HTML-a. Specyfikacja HTML 2.0, opublikowana w 1996 jako Request for Comments, zawierała pomysły zarówno ze szkicu HTML jak i HTML+. "HTML 1.0" nigdy nie istniał. Oznaczenie 2.0 zostało nadane w celu odróżnienia nowej specyfikacji od wcześniejszych szkiców[9].
+                Dalszy rozwój HTML-a pod pieczą IETF przeciągał się ze względu na konflikt interesów. Od 1996 specyfikacje HTML rozwijane były z udziałem komercyjnych producentów oprogramowania przez organizację World Wide Web Consortium (W3C). W 2000 HTML stał się międzynarodowym standardem (ISO/IEC 15445:2000). Ostatnia specyfikacja języka HTML to opublikowana w 1999 przez W3C – HTML 4.01. Jej błędy zostały poprawione przez erratę opublikowaną w 2001.
+                <br />
+                Powrót do początku <a href="#par1">strony</a>.
+            </section>
+        </article>
+    </section>
+
+    <!--stopka-->
+    <footer id="stopka">
+        <aside class="st-box-left">
+            Data i czas: <span id="clock"></span>
+            <br />
+            Aktualizacja: <span id="modyf"></span>
+        </aside>
+        <aside class="st-box-right">
+            <!-- walidatory -->
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS3!" />
+            </a>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="ikony/html5.png" alt="Poprawny HTML5" />
+            </a>
+        </aside>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>

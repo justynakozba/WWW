@@ -1,0 +1,140 @@
+tworzenie formularzy chyba 4 
+ <!-- zasadnicza zawartosc-->
+    <section>
+        <header><h2>Str. 5 Strona - demo elementu video(kilka formatów)</h2></header>
+        <article>
+            <form action="http://strona1.pl" method="get" target="_blank">
+                <fieldset>
+                    <legend>Dane kontaktowe</legend>
+                    <label for="p01">Imie:</label>
+                    <input name="p01" id="p02" type="text" placeholder="wpisz swoje imie" /><br />
+                    <label for="p02">Nazwisko:</label>
+                    <input name="p02" id="p02" type="text" placeholder="wpisz swoje nazwisko" /><br />
+                    <label for="p03">e-mail:</label>
+                    <input name="p03" id="p03" type="text" placeholder="ccc@ccc.ccc.pl" /><br />
+                    <label for="p04">:</label>
+                    <input name="p04" id="p04" type="text" placeholder="ccc-ccc-ccc" /><br />
+
+                </fieldset>
+                <p>
+                    <button type="submit">Wyslij</button> <br />
+                    <button type="reset">Wyczysc</button>
+
+                </p>
+            </form>
+        </article>
+
+Zadanie 3 
+<!-- zasadnicza zawartosc-->
+    <section>
+        <header><h2>Str. 3 Formularz HTML5, demo nowych elementów(np.details), nowych atrybutów</h2></header>
+        <article>
+          <form action="http://strona1.pl" method="get" target="_blank">
+              <fieldset>
+                  <legend>Dane kontaktowe</legend>
+                  <label for="p01">Imie:</label>
+                  <input name="p01" id="p02" type="text" placeholder="wpisz swoje imie" /><br />
+                  <label for="p02">Nazwisko:</label>
+                  <input name="p02" id="p02" type="text" placeholder="wpisz swoje nazwisko"/><br />
+                  <label for="p03">e-mail:</label>
+                  <input name="p03" id="p03" type="text" placeholder="ccc@ccc.ccc.pl" /><br />
+                  <label for="p04">:</label>
+                  <input name="p04" id="p04" type="text" placeholder="ccc-ccc-ccc"/><br />
+
+              </fieldset>
+              <p>
+                  <button type="submit">Wyslij</button> <br />
+                  <button type="reset">Wyczysc</button>
+
+              </p>
+          </form> 
+        </article>
+
+Zadanie 2
+    <!-- zasadnicza zawartosc-->
+    <section>
+        <h2>Str. 2 Formularz HTML5, demo nowych typów kontrolki input</h2>
+        <h3>Oto tabela:</h3>
+        <article>
+            <table border="1">
+                <caption>
+                    Tabela cudów swiata
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Nazwa obiektu</th>
+                        <th>Rodzaj</th>
+                        <th>Polozenie</th>
+                        <th>Data powstania</th>
+                    </tr>
+                </thead>
+                <tfoot><tr>
+    <th>Nazwa obiektu</th>
+    <th>Rodzaj</th>
+    <th>Polozenie</th>
+    <th>Data powstania</th>
+</tr></tfoot>
+                <tbody>
+                    <tr>
+                    <td>Krzywa wieza w Pizie</td>
+                    <td>wieza</td>
+                        <td>Wlochy</td>
+                        <td>wiek</td>
+                </tr>
+                    <tr>
+                        <td>Krzywa wieza w Pizie</td>
+                        <td>wieza</td>
+                        <td>Wlochy</td>
+                        <td>wiek</td>
+                    </tr>
+                    <tr>
+                        <td>Krzywa wieza w Pizie</td>
+                        <td>wieza</td>
+                        <td>Wlochy</td>
+                        <td>wiek</td>
+                    </tr>
+                    <tr>
+                        <td>Krzywa wieza w Pizie</td>
+                        <td>wieza</td>
+                        <td>Wlochy</td>
+                        <td>wiek</td>
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+
+           
+        </article>
+        
+    </section>
+
+zadanie 1
+ <!-- zasadnicza zawartosc-->
+    <section>
+        <h2>Str. 1 Formularz HTML5, demo kontrolki input, label, textarea</h2>
+        <article id="zawartosc">
+            <h3>Opis</h3>
+            <p>Atrybut do sprawdzania pisowni.</p>
+        </article>
+        <article>
+            <h3>Przyklad</h3>
+            <p class="parstr1">
+                <textarea spellcheck="true">Tekst do sprawdzenia, zawierajacy rozne bledy.</textarea> 
+                <textarea spellcheck="false">Tekst, który nie bedzie sprawdzany.</textarea>
+            </p>
+        </article>
+    </section>
+
+    <!--stopka-->
+    <footer id="stopka">
+        <aside class="st-box-left">
+            Data i czas: <span id="clock"></span>
+            <br />
+            Aktualizacja: <span id="modyf"></span>
+        </aside>
+        <aside class="st-box-right">

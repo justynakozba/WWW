@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Justyna Koźba" />
+    <title>HTML5 - elementy dokumentu i grupowania treści </title>
+    <meta name="description"
+          content =" Ilustracja atrybutów HTML5"/>
+    <meta name="keywords"
+          content=" = odnośniki, odwołania, cytaty, listy, definicje, skróty"/>
+    <link rel="shortcut icon" href="http://inet01.website.net.ii.pwr.wroc.pl/navi1/ikony/favicon.ico" />
+    <link href="style/styl1.css" rel="stylesheet" type="text/css" />
+    <script src="skrypty/nasluch.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- zdefiniować styl elementów na str. 1-->
+    <style>
+        article {
+            border: 1px solid #00d4ff;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 10px 10px;
+        }
+
+            article > footer {
+                padding: 5px;
+                margin: 5px;
+                text-align: center;
+            }
+
+                article > footer > nav > a {
+                    color: black;
+                }
+
+        body > article > section {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--organizacja strony-->
+    <!--nagłówek-->
+    <header id="naglowek">
+        <p>
+            Studia podyplomowe: Technologie internetowe<br />
+            Kurs: Programowanie WWW<br />
+            Laboratorium nr 5<br />
+            HTML5 - elementy dokumentu i grupowania treści:
+            <a href="str1.html"><b>strona 1</b></a> |
+            <a href="str2.html"><b>strona 2</b></a> |
+            <a href="str3.html"><b>strona 3</b></a> |
+            <a href="str4.html"><b>strona 4</b></a> |
+        </p>
+        <p>
+            Autor: Justyna Koźba<br />
+            E-mail: wiz-6659@student.pwr.edu.pl
+        </p>
+    </header>
+    <!-- nawigacja -->
+    <nav id="nawigacja">
+        <div id="lewy">
+            <a href="index.html" title="strona główna">&lt;&lt;</a>
+        </div>
+        <div id="srodek">
+            <a href="index.html" title="strona główna">strona główna</a>
+        </div>
+        <div id="prawy">
+            <a href="str2.html" title="strona 2">&gt;&gt;</a>
+        </div>
+        <div class="clear"></div>
+    </nav>
+    <!-- zasadnicza zawartość-->
+    <section>
+        <header><h2>Str. 1. Ilustracja elementów z grupy "dzielenie treści na sekcje".</h2></header>
+        <header>
+            <h2>Polska</h2>
+            <h3>Justyna Koźba</h3>
+            <nav>
+                <h3>Spis treści</h3>
+                <ul>
+                    <li><a href="#filmypol">Najpopularniejsze polskie dania</a></li>
+                    <li><a href="#filmyang">Ciekawe miejsca we Wrocławiu</a></li>
+                    <li><a href="#filmyame">Ciekawe miejsca w Warszawie</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <header>
+                <h3 id="filmypol">Najpopularniejsze polskie dania</h3>
+                <p>Na kształtowanie się swoistych cech kuchni polskiej miały wpływ przemiany historyczne. Na przestrzeni dziejów kuchnia polska ulegała wpływom i zmianom regionalnym, 
+                zwłaszcza że tereny Rzeczypospolitej Polskiej historycznie zamieszkiwała zmieniająca się mozaika narodów. W efekcie silne są kulinarne wpływy wschodnie 
+                (tatarsko-tureckie, wcześniej mongolskie), rusińskie, niemieckie, francuskie, włoskie i żydowskie.
+                </p>
+            </header>
+            <section>
+                <h3>Dania mięsne</h3>
+                <ul>
+                    <li>gołąbki</li>
+                    <li>kotlet schabowy</li>
+                    <li>kotlet mielony</li>
+                    <li>bigos</li>
+                    <li>golonka</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Dania bezmiesne</h3>
+                <ul>
+                    <li>pierogi ruskie</li>
+                    <li>kluski śląskie</li>
+                    <li>barszcz czerwony</li>
+                    <li>chłodnik</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Na słodko</h3>
+                <ul>
+                    <li>pierogi ruskie</li>
+                    <li>kluski śląskie</li>
+                    <li>barszcz czerwony</li>
+                    <li>chłodnik</li>
+                </ul>
+            </section>
+            <footer>
+                <nav>
+                    Więcej informacji:
+                    <a href="https://pl.wikipedia.org/wiki/Kuchnia_polska" target="_blank">Kuchnia poska</a>
+                </nav>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h3 id="filmyang">Ciekawe miejsca we Wrocławiu</h3>
+                <p>Czyli dlaczego kocham Wrocław</p>
+            </header>
+            <section>
+                <h3>Rynek główny</h3>
+                <p>
+                    Wrocławski Rynek ma niemal 3,8 hektara i należy do największych dawnych placów targowych w Polsce.
+                    Przyciąga urokiem zabytkowych kamienic, żywiołowością i klimatem wyjątkowego centrum europejskiej metropolii.
+                </p>
+            </section>
+            <section>
+                <h3>Afrykarium</h3>
+                <p>
+                    Afrykarium to największa atrakcja wrocławskiego ogrodu zoologicznego. To unikatowe na światową skalę oceanarium prezentujące wyłącznie gatunki zwierząt pochodzących z Czarnego Lądu.
+                    W specjalnym budynku, kojarzącym się z arką Noego, oraz w jego otoczeniu stworzono zwierzętom niemal domowe warunki, od oceanicznych głębi, przez plaże Morza Czerwonego po dżunglę Kongo.
+                    Zamieszkują je m.on. zachwycające żółwie, kolorowe ryby, manaty hipopotamy, płaszczki, rekiny, pingwiny i krokodyle, oraz dziesiątki innych stworzeń.
+                </p>
+            </section>
+            <section>
+                <h3>Muzeum Narodowe</h3>
+                <p>
+                    Muzeum Narodowe od 1947 roku zajmuje gmach dawnej Rejencji - Zarządu Prowincji Śląskiej. Jego zbiory prezentowane są także w Pawilonie Czterech Kopuł w pobliżu Hali Stulecia, 
+                    oddziałem Muzeum jest Panorama Racławicka. W budynku przy pl. Powstańców Warszawy na stałe pokazywane są m.in. wystawy sztuki średniowiecznej, sztuki śląskiej od XIV do XVI wieku, 
+                    oraz sztuki polskiej do XIX wieku.
+                </p>
+            </section>
+            <footer>
+                <nav>
+                    Więcej informacji:
+                    <a href="https://visitwroclaw.eu/miejsca/zwiedzanie-i-atrakcje" target="_blank">Atrakcje Wrocławia</a>
+                </nav>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h3 id="filmyame">Ciekawe miejsca w Warszawie</h3>
+            </header>
+            <section>
+                <h3>Stare miasto</h3>
+                <p>
+                    Stare i Nowe Miasto zwane Starówką, to historyczne centrum Warszawy - znajdują się tu pamiątki z czasów od średniowiecza aż do współczesności.
+                </p>
+            </section>
+            <section>
+                <h3>Park Skaryszewski</h3>
+                <p>
+                    Sąsiadujący z Saską Kępą Park Skaryszewski im. Ignacego Jana Paderewskiego ("Skaryszak") jest ulubionym miejscem spacerów mieszkańców Pragi, nie tylko na weekend.
+                    Powstał ponad 90 lat temu na łąkach podwarszawskiej wsi. Już wtedy istniał tu plac zabaw. Były także korty tenisowe i pierwsze w Warszawie boisko dla kobiet.
+                </p>
+            </section>
+            <section>
+                <h3>Multimedialny Park Fontann</h3>
+                <p>
+                    Multimedialny Park Fontann znajduje się na skwerze I Dywizji Pancernej na warszawskim Podzamczu. Park fontann składa się z fontanny głównej i liniowej, które działają w zamkniętym obiegu. Główną atrakcją są multimedialne pokazy. Są to podświetlane strumienie wody, które tańczą w rytm muzyki. 
+                    Tryskająca woda tworzy mgiełkę, na której wyświetlane są projekty filmowe i laserowe. Pierwszy uroczysty pokaz odbył się 17 maja 2011 roku.
+                </p>
+            </section>
+            <footer>
+                <nav>
+                    Więcej informacji:
+                    <a href="http://www.polskaniezwykla.pl/web/place/search,1,-1,-1,918123,-1,-1,-1.html" target="_blank">Atrakcje Warszawy</a>
+                </nav>
+            </footer>
+        </article>
+    </section>
+ 
+
+    <!--stopka-->
+    <footer id="stopka">
+        <aside class="st-box-left">
+            Data i czas: <span id="clock"></span>
+            <br />
+            Aktualizacja: <span id="modyf"></span>
+        </aside>
+        <aside class="st-box-right">
+            <!-- walidatory -->
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS3!" />
+            </a>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="ikony/html5.png" alt="Poprawny HTML5" />
+            </a>
+        </aside>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>
