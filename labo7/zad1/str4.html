@@ -10,14 +10,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- zdefiniować styl elementów na str. 3-->
     <style>
-        .klasa1 {
-            color: blueviolet;
-            background-color: aqua
+        .listy ul {
+            list-style-type:disc;
         }
 
-        .klasa2 {
-            color: red;
-            background-color: burlywood;
+        p[par] {
+            color: forestgreen;
+            font-size:150%;
+        }
+
+        .parag {
+            background-color: blueviolet;
+            text-decoration:line-through;
+        }
+
+        #ident {
+            background-color: hotpink;
+            color: blue;
+            font-family: 'Californian FB', Britannic, 'Bell MT', Arial, Geneva, Verdana, sans-serif;
+            text-align: center;
         }
     </style>
 </head>
@@ -28,7 +39,7 @@
         <p>
             Studia podyplomowe: Technologie internetowe<br />
             Kurs: Programowanie WWW<br />
-            Laboratorium nr 6<br />
+            Laboratorium nr 7<br />
             HTML5 - atrybuty globalne:
             <a href="str1.html"><b>strona 1</b></a> |
             <a href="str2.html"><b>strona 2</b></a> |
@@ -56,11 +67,16 @@
         <div class="clear"></div>
     </nav>
     <!-- zasadnicza zawartość-->
-        <section>
-            <div id="L71">
-                <p style="color: red">Przykład selektora. </p>
-            </div>
-        </section>
+    <section>
+
+        <h1>Przykład selektora elementu, selektora ID i selektora klasy. </h1>
+        <p>Element bez selektora elementu</p>
+        <p par>Element wybrany selektorem elementu</p>
+        <h2>Element bez selektora ID</h2>
+        <h2 id=ident>Element wybrany selektorem ID</h2>
+        <p>Element bez selektora klasy</p>
+        <p class="parag">Element wybrany selektorem klasy</p>
+    </section>
   
 
     <!--stopka-->

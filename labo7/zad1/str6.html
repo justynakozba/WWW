@@ -10,8 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- zdefiniować styl elementów na str. 4-->
     <style>
-        .parstr4 {
-            color: magenta;
+        h2[title] {
+            color: hotpink;
+            font-size: 150%;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p[lang='pl'] {
+            color: cornflowerblue;
+            font-size: 1.0em;
+        }
+
+        p[lang='en'] {
+            color: forestgreen;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -22,7 +34,7 @@
         <p>
             Studia podyplomowe: Technologie internetowe<br />
             Kurs: Programowanie WWW<br />
-            Laboratorium nr 3<br />
+            Laboratorium nr 7<br />
             HTML5 - atrybuty globalne:
             <a href="str1.html"><b>strona 1</b></a> |
             <a href="str2.html"><b>strona 2</b></a> |
@@ -51,9 +63,18 @@
     </nav>
     <!-- zasadnicza zawartość-->
     <section>
-        <div id="L71">
-            <p style="color: red">Przykład selektorów atrybutów. </p>
+
+        <h1>Przykład selektorów atrybutów. </h1>
+        <div>
+            <h2 title="element wybrany selektorem [title]">Element <em>h2</em> z atrybutem title</h2>
+            <h2>Element <em>h2</em> bez atrybutu title</h2>
         </div>
+        <div>
+            <p lang="pl" title="element wybrany selektorem [lang='pl']">Nigdy nie rezygnuj z tego co chcesz naprawdę w życiu robić. Osoba z wielkimi marzeniami jest potężniejsza niż osoba posiadająca same suche fakty.<br /></p>
+            <p lang="en" title="element wybrany selektorem [lang='en']"> Never give up on what you really want to do.  The person with big dreams is more powerful than one with all the facts..<br /></p>
+          
+        </div>
+
     </section>
     <!--stopka-->
     <footer id="stopka">

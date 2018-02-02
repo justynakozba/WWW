@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- zdefiniować styl elementów na str. 3-->
     <style>
-        .klasa1 {
-            color: blueviolet;
-            background-color: aqua
+        h2, h3, h4 {
+            color: deeppink;
+            font-size: x-large;
         }
-
-        .klasa2 {
-            color: red;
-            background-color: burlywood;
-        }
+            h2 + p {
+                font-family: Calibri;
+                font-size: 1.75vw;
+                background-color:pink;
+                color: white;
+            }
     </style>
 </head>
 <body>
@@ -28,7 +29,7 @@
         <p>
             Studia podyplomowe: Technologie internetowe<br />
             Kurs: Programowanie WWW<br />
-            Laboratorium nr 6<br />
+            Laboratorium nr 7<br />
             HTML5 - atrybuty globalne:
             <a href="str1.html"><b>strona 1</b></a> |
             <a href="str2.html"><b>strona 2</b></a> |
@@ -57,9 +58,22 @@
     </nav>
     <!-- zasadnicza zawartość-->
     <section>
-        <div id="L71">
-            <p style="color: red">Przykład pozostałych selektorów. </p>
+
+        <h1>Przykład pozostałych selektorów. </h1>
+        <p>Grupowanie selektorów</p>
+        <div title="elementy h2, h3, h3 mają jednakowy styl poprzez zgrupowanie">
+            <h2>nagłówek 2<em>h2</em></h2>
+            <h3>nagłówek 3<em>h3</em></h3>
+            <h4>nagłówek 4<em>h4</em></h4>
         </div>
+        <p>Selektor przyległości</p>
+        <div>
+            <h2 title="selektor przyległości: h2 + p">Selektor przyległości</h2>
+            <p>Pierwszy paragraf przyległy do <em>h2</em><br /></p>
+            <p>Drugi paragraf nieprzyległy do <em>h2</em><br /></p>
+            <p>Trzeci paragraf nieprzyległy do <em>h2</em><br /></p>
+        </div>
+
     </section>
 
     <!--stopka-->
